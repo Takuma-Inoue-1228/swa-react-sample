@@ -11,33 +11,20 @@ export const Header = () => {
       </Link>
 
       <div className="ml-auto">
-        <ul className="flex gap-8">
+        <ul className="flex gap-4">
           {HeaderData.map((value, key) => {
             return (
               <li
                 key={key}
-                className="w-16 flex cursor-pointer hover:opacity-50 justify-center items-center "
-                onClick={() => {
-                  window.location.pathname = value.link;
-                }}
+                className="w-auto flex cursor-pointer hover:opacity-50 items-center "
               >
-                <div className="w-1/4" id="icon">
-                  {value.icon}
-                </div>
-                <div className="w-3/4 ml-2" id="title">
+                <div className="w-1/4">{value.icon}</div>
+                <Link className="w-3/4 ml-1" to={`/${value.link}`}>
                   {value.title}
-                </div>
+                </Link>
               </li>
             );
           })}
-          {/* <li>
-            <FaUserAlt />
-            <Link to={"/about"}>About</Link>
-          </li>
-          <li>
-            <FaVial />
-            <Link to={"/Test"}>Test</Link>
-          </li> */}
         </ul>
       </div>
     </header>

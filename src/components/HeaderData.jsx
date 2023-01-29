@@ -11,4 +11,9 @@ export const HeaderData = [
     icon: <FaVial />,
     link: "test",
   },
+  {
+    title: "Test2",
+    icon: <FaVial />,
+    link: "test2",
+  },
 ];
