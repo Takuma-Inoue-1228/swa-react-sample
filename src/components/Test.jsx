@@ -1,5 +1,3 @@
-import { FaHome, FaUserAlt } from "react-icons/fa";
-
 export const Test = () => {
   return (
     <>
