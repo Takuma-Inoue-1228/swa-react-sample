@@ -1,4 +1,4 @@
-import { FaUserAlt, FaVial } from "react-icons/fa";
+import { FaUserAlt, FaPlusCircle, FaVial } from "react-icons/fa";
 
 export const HeaderData = [
   {
@@ -7,13 +7,13 @@ export const HeaderData = [
     link: "about",
   },
   {
+    title: "Count",
+    icon: <FaPlusCircle />,
+    link: "count",
+  },
+  {
     title: "Test",
     icon: <FaVial />,
     link: "test",
-  },
-  {
-    title: "Test2",
-    icon: <FaVial />,
-    link: "test2",
   },
 ];
