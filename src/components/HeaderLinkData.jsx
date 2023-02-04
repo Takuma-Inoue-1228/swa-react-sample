@@ -1,6 +1,6 @@
 import { FaUserAlt, FaPlusCircle, FaVial } from "react-icons/fa";
 
-export const HeaderData = [
+export const HeaderLinkData = [
   {
     title: "About",
     icon: <FaUserAlt />,
