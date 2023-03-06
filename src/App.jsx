@@ -5,6 +5,7 @@ import { About } from "./components/About.jsx";
 import { Count } from "./components/CountPage.jsx";
 import { TestPage } from "./components/TestPage.jsx";
 import { TestHooksPage } from "./components/TestHooksPage.jsx";
+import { TodoPage } from "./components/TodoList.jsx";
 import { NotFound } from "./components/404.jsx";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path={"/count"} element={<Count />} />
         <Route path={"/test"} element={<TestPage />} />
         <Route path={"/test_hooks"} element={<TestHooksPage />} />
+        <Route path={"/todo"} element={<TodoPage />} />
         <Route path={"*"} element={<NotFound />} />
       </Routes>
     </BrowserRouter>
